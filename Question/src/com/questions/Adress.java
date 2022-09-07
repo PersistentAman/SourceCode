@@ -1,0 +1,35 @@
+package com.questions;
+
+public class Adress implements Comparable<Adress> {
+	private String StreeName;
+	private int Pin;
+	public Adress(String streeName, int pin) {
+		super();
+		StreeName = streeName;
+		Pin = pin;
+	}
+	public String getStreeName() {
+		return StreeName;
+	}
+	public void setStreeName(String streeName) {
+		StreeName = streeName;
+	}
+	public int getPin() {
+		return Pin;
+	}
+	public void setPin(int pin) {
+		Pin = pin;
+	}
+	
+	public int compareTo(Adress o){
+		
+		return this.getPin()-o.getPin();
+		
+	}
+	@Override
+	public String toString() {
+		return "Adress [StreeName=" + StreeName + ", Pin=" + Pin + "]";
+	}
+	
+
+}

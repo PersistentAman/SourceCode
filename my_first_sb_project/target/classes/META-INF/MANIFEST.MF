@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: my_first_sb_project
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: aman.c.mishra
+Implementation-Vendor-Id: com.project.springboot
+Build-Jdk: 1.8.0_331
+Implementation-URL: https://spring.io/projects/spring-boot/my_first_sb
+ _project
+Created-By: Maven Integration for Eclipse
+

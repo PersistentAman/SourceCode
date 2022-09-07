@@ -1,0 +1,40 @@
+package com.example.rest.webservice.REST.user;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class userServiceDAO {
+	
+	private static List<User> users=new ArrayList<User>();
+	
+	private static Integer Counter=3;
+	static {
+		users.add(new User(1,"Aman",new Date()));
+		users.add(new User(2,"Anjali",new Date()));
+		users.add(new User(3,"Pulla",new Date()));
+	}
+	
+	 public List<User> findAll() {
+		return users;
+	}
+	 
+	 public User findOne(int id) {
+		 for(User user: users)
+		 {
+			 if(user.getId()==id) {
+				return user; 
+		 }
+		 
+	 }
+		return null;
+	 }
+	 
+	 public User save(User user) {
+		 if (user.getId()==null)
+			 Counter++;
+		 users.add(user);
+		 return user;
+	 }
+
+}
